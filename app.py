@@ -4,12 +4,18 @@ import streamlit as st
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
+from PIL import Image
+image = Image.open('index.jpg')
+
+
+
 # Web App Title
 st.markdown('''
 # **The DPA**
-
 This is the **Data Profiling App**
 ''')
+
+st.image(image, caption='Data Space')
 
 # Upload CSV data
 with st.sidebar.header('Upload your CSV data'):
