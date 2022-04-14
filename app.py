@@ -8,12 +8,11 @@ from streamlit_pandas_profiling import st_profile_report
 st.markdown('''
 # **The DPA**
 
-This is the **Data Profiling App ** 
----
+This is the **Data Profiling App**
 ''')
 
 # Upload CSV data
-with st.sidebar.header('1. Upload your CSV data'):
+with st.sidebar.header('Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 
 # Pandas Profiling Report
