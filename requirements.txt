@@ -3,3 +3,4 @@ pandas
 numpy
 pandas-profiling
 streamlit-pandas-profiling
+plotly
